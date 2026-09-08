@@ -31,7 +31,7 @@
 
 已確認 GitHub Pages 靜態前端＋Cloudflare Worker 代理官方 Go Playground。官方服務不提供前端所需 CORS，因此代理負責固定上游轉送與來源限制。開發時由 Vite 提供同源代理；正式版使用 VITE_GO_RUNNER_URL。
 
-使用者目前沒有現成 Worker；登入與部署尚待完成。公開 GitHub repo 建立遭自動核准審查攔截，需使用者明確授權公開原始碼後才能發布。
+使用者目前沒有現成 Worker；登入與部署尚待完成。使用者已明確授權公開原始碼；GitHub repo 與 Pages 已發布，Actions run 34177922321 成功。
 
 不以字串比對或假執行取代編譯和測試。不把未通過驗證的題目記錄完成。
 

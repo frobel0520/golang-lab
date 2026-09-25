@@ -2,7 +2,7 @@
 
 參考 TypeScript Lab 的繁體中文 Go 語法實戰網站：10 章、40 題，包含 Monaco 編輯器、語言對照、提示／解答、真實 Go 編譯與測試、草稿／進度保存及自由練習區。
 
-網站：https://frobel0520.github.io/golang-lab/ 。前端已發布，公開執行功能仍待部署 Worker 並設定 VITE_GO_RUNNER_URL。
+網站：https://frobel0520.github.io/golang-lab/ 。線上可直接編譯執行：代理 Worker 部署在 https://golang-lab-runner.curio-lab.workers.dev ，GitHub Actions repository variable `VITE_GO_RUNNER_URL` 已設定為該網址（2026-09-25）。
 
 ## 本機開發
 

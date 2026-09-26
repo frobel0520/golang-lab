@@ -4,6 +4,11 @@
 
 網站：https://frobel0520.github.io/golang-lab/ 。線上可直接編譯執行：代理 Worker 部署在 https://golang-lab-runner.curio-lab.workers.dev ，GitHub Actions repository variable `VITE_GO_RUNNER_URL` 已設定為該網址（2026-09-25）。
 
+## 學習系列與維運
+
+- Go Lab 是 [Learning Atlas](https://frobel0520.github.io/learning-atlas/)「程式語言」路線的一站；首頁有返回 Learning Atlas 的連結（2026-09-25 起）。
+- `index.html` 載入 Harbor 維護腳本（`data-project="golang-lab"`，2026-09-15 起）：Harbor 開啟維護模式時顯示全螢幕維護畫面，Harbor 連不上時頁面照常顯示。
+
 ## 本機開發
 
 Node.js >= 22.13。不需本機 Go toolchain。

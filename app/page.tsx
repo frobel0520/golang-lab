@@ -156,8 +156,11 @@ function Lab() {
       <Sidebar>
         <SidebarHeader>
           <a className="brand" href={import.meta.env.BASE_URL} aria-label="Go Lab 首頁">
-            <span className="ts-logo">go</span>Go
-            <span className="brand-light"> / lab</span>
+            <span className="brand-mark" aria-hidden="true">GO</span>
+            <span className="brand-text">
+              <b>Go Lab</b>
+              <small>語法實戰 / SYNTAX LAB</small>
+            </span>
           </a>
         </SidebarHeader>
         <SidebarContent>

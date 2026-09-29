@@ -14,7 +14,7 @@
 
 - GitHub repo 與 Pages 已發布，使用者已明確授權公開。Actions run 34177922321 的 check 與 deploy 成功；首頁、JS、CSS、favicon、Monaco loader 均 HTTP 200。
 - 網址：https://frobel0520.github.io/golang-lab/ 。驗證對應程式版本 c809fa7。
-- 2026-09-25 README 記錄 Cloudflare Worker runner 已部署於 `https://golang-lab-runner.curio-lab.workers.dev`，`VITE_GO_RUNNER_URL` 已設為該網址。2026-09-29 在公開網站實際執行第 1 題：起始碼由遠端編譯回傳 0/3，正確零值解答透過 ⌘+Enter 執行後 3/3 通過、進度變為 1/40；重新整理後草稿與進度仍在。375px 模擬視窗可閱讀內容並開啟章節側欄。
+- 2026-09-25 README 記錄 Cloudflare Worker runner 已部署於 `https://golang-lab-runner.curio-lab.workers.dev`，`VITE_GO_RUNNER_URL` 已設為該網址。2026-09-29 在公開網站實際執行第 1 題：起始碼由遠端編譯回傳 0/3，正確零值解答透過 ⌘+Enter 執行後 3/3 通過、進度變為 1/40；重新整理後草稿與進度仍在。自由練習區的預設程式回傳 `Hello, Go!`。375px 模擬視窗可閱讀內容、開啟章節側欄與自由練習區。
 
 ## 未完成／限制
 

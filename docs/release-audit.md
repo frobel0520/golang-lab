@@ -1,6 +1,6 @@
 # Go Lab 驗收紀錄
 
-日期：2026-09-08。
+起始日期：2026-09-08；線上複驗：2026-09-29。
 
 ## 已驗證
 
@@ -14,11 +14,12 @@
 
 - GitHub repo 與 Pages 已發布，使用者已明確授權公開。Actions run 34177922321 的 check 與 deploy 成功；首頁、JS、CSS、favicon、Monaco loader 均 HTTP 200。
 - 網址：https://frobel0520.github.io/golang-lab/ 。驗證對應程式版本 c809fa7。
+- 2026-09-25 README 記錄 Cloudflare Worker runner 已部署於 `https://golang-lab-runner.curio-lab.workers.dev`，`VITE_GO_RUNNER_URL` 已設為該網址。2026-09-29 在公開網站實際執行第 1 題：起始碼由遠端編譯回傳 0/3，正確零值解答透過 ⌘+Enter 執行後 3/3 通過、進度變為 1/40；重新整理後草稿與進度仍在。375px 模擬視窗可閱讀內容並開啟章節側欄。
 
 ## 未完成／限制
 
-- Cloudflare Worker 尚未部署，使用者目前無現成 runner。需 Wrangler 登入、部署並設定 GitHub variable VITE_GO_RUNNER_URL。
-- 未實際做瀏覽器互動 QA：草稿還原、切題、停止、行動版與鍵盤互動不宣稱已驗證。
+- Runner 已部署且公開站第 1 題的遠端編譯流程已驗證；其餘 39 題、停止流程與錯誤邊界尚未逐題線上驗收。
+- 已驗證第 1 題的鍵盤執行、草稿／進度重新整理與 375px 模擬視窗；真實手機、完整切題／鍵盤巡覽與輔助使用 QA 仍待完成。
 - Monaco 僅提供 Go 語法上色，沒有 gopls 即時型別診斷；執行時使用真正 Go 編譯器。
 - 編輯器的執行取消會中止前端等待；上游已提交工作由官方服務自身限制停止。
 - Go Playground 是外部依賴，其可用性與沙箱限制不由本專案保證。

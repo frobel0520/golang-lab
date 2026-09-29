@@ -1,8 +1,24 @@
 # Go Lab
 
-參考 TypeScript Lab 的繁體中文 Go 語法實戰網站：10 章、40 題，包含 Monaco 編輯器、語言對照、提示／解答、真實 Go 編譯與測試、草稿／進度保存及自由練習區。
+> 參考 TypeScript Lab 的繁體中文 Go 語法實戰網站：10 章、40 題，包含 Monaco 編輯器、語言對照、提示／解答、真實 Go 編譯與測試、草稿／進度保存及自由練習區。
+
+## 概覽
 
 網站：https://frobel0520.github.io/golang-lab/ 。線上可直接編譯執行：代理 Worker 部署在 https://golang-lab-runner.curio-lab.workers.dev ，GitHub Actions repository variable `VITE_GO_RUNNER_URL` 已設定為該網址（2026-09-25）。
+
+## 主要功能／內容
+
+繁體中文 Go 語法實戰教材，10 章 40 題，包含真實 Go 編譯測試、提示與解答、語言對照及練習進度保存。
+
+## 現況與已知限制
+
+既有 README 記錄線上網站與 Go runner Worker 已設定；本次僅整理文件，未重新驗證線上服務。
+
+## 授權與來源
+
+Repository 根目錄未見授權檔；此 README 不另行宣告使用或再散布權利。
+
+---
 
 ## 學習系列與維運
 

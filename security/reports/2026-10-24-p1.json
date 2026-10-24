@@ -1,0 +1,125 @@
+{
+  "task": "SEC-P1-GO",
+  "base": "499cbab00b960c4f186877c3631b8f1d13ae3a85",
+  "environment": {
+    "platform": "Windows x64",
+    "cpu": "12th Gen Intel(R) Core(TM) i7-12700KF",
+    "baselineNode": "24.14.1",
+    "validationNode": "24.22.1",
+    "installation": "npm ci --ignore-scripts --no-audit --no-fund",
+    "configuration": "synthetic runner URL; GitHub Pages base path"
+  },
+  "fixture": "No real user code, credentials or data; Go learner execution remains remote",
+  "performance": {
+    "metric": "production JS+CSS gzip bytes",
+    "threshold": "after <= before * 1.02",
+    "baseline": [
+      {
+        "extension": "js",
+        "bytes": 354554,
+        "gzipBytes": 115085
+      },
+      {
+        "extension": "css",
+        "bytes": 205043,
+        "gzipBytes": 31191
+      }
+    ],
+    "after": [
+      {
+        "extension": "js",
+        "bytes": 354554,
+        "gzipBytes": 115085
+      },
+      {
+        "extension": "css",
+        "bytes": 205043,
+        "gzipBytes": 31191
+      }
+    ],
+    "result": {
+      "beforeGzipBytes": 146276,
+      "afterGzipBytes": 146276,
+      "ratio": 1,
+      "pass": true,
+      "scope": "JS+CSS bundle regression; not test duration or production latency"
+    }
+  },
+  "validation": {
+    "advisories": {
+      "date": "2026-10-24",
+      "method": "npm bulk advisory; public npm package names and resolved versions only; user authorized",
+      "publicPackages": 475,
+      "totalMatches": 0,
+      "high": 0,
+      "findings": []
+    },
+    "remoteGo": {
+      "status": "pass",
+      "endpoint": "https://go.dev/_/compile",
+      "fixture": "Synthetic hello program only; actual project parseRunnerResponse; no local Go process",
+      "httpStatus": 200,
+      "responseKeys": [
+        "Errors",
+        "Events",
+        "VetErrors"
+      ],
+      "parserError": null,
+      "expectedOutputMatched": true,
+      "elapsedMs": 299.007,
+      "sampleCount": 1,
+      "performanceGate": "not_scored; external smoke only, not latency acceptance",
+      "harnessAttempts": [
+        {
+          "attempt": 1,
+          "status": "harness-error",
+          "reason": "Shell quoting syntax; request was not sent"
+        },
+        {
+          "attempt": 2,
+          "status": "harness-error",
+          "reason": "HTTP 200 but harness assumed optional compiler Status field; current API exposes Events and Errors"
+        },
+        {
+          "attempt": 3,
+          "status": "pass",
+          "reason": "Actual project parseRunnerResponse validated isolated compiled output"
+        }
+      ]
+    },
+    "check": {
+      "status": "pass",
+      "tests": 14,
+      "typecheck": "pass",
+      "lint": "pass",
+      "node": "24.22.1"
+    },
+    "build": {
+      "status": "pass",
+      "vite": "8.2.4",
+      "basePath": "/golang-lab/",
+      "runnerConfiguration": "synthetic URL; generated output not deployable"
+    },
+    "browser": {
+      "mode": "local production build; headless Chromium; no external network",
+      "results": [
+        {
+          "width": 1280,
+          "checkButton": "visible",
+          "solutionToggle": "pass",
+          "freePractice": "pass",
+          "pageErrors": 0,
+          "horizontalOverflow": false
+        },
+        {
+          "width": 375,
+          "checkButton": "visible",
+          "solutionToggle": "pass",
+          "freePractice": "mobile-sidebar-collapsed",
+          "pageErrors": 0,
+          "horizontalOverflow": false
+        }
+      ]
+    }
+  }
+}
